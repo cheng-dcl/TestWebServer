@@ -1,0 +1,4 @@
+[main][2018-02-27 01:00:04,904][WARN][---][Parent.java:24]warn ->Son
+[main][2018-02-27 01:00:04,904][ERROR][---][Parent.java:25]error ->Son
+[main][2018-02-27 01:00:04,904][FATAL][---][Parent.java:26]fatal ->Son
+[main][2018-02-27 01:00:04,904][WARN][---][Son.java:17]这是son单独的一条日志

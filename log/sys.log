@@ -1,0 +1,10 @@
+[main][2018-02-27 01:00:04,904][DEBUG][21][SYS][TestLog4j.java:30:com.cheng.log4j.TestLog4j.main(TestLog4j.java:30):%][main]HelloWorld0
+[main][2018-02-27 01:00:04,905][DEBUG][22][SYS][TestLog4j.java:30:com.cheng.log4j.TestLog4j.main(TestLog4j.java:30):%][main]HelloWorld1
+[main][2018-02-27 01:00:04,905][DEBUG][22][SYS][TestLog4j.java:30:com.cheng.log4j.TestLog4j.main(TestLog4j.java:30):%][main]HelloWorld2
+[main][2018-02-27 01:00:04,905][DEBUG][22][SYS][TestLog4j.java:30:com.cheng.log4j.TestLog4j.main(TestLog4j.java:30):%][main]HelloWorld3
+[main][2018-02-27 01:00:04,905][DEBUG][22][SYS][TestLog4j.java:30:com.cheng.log4j.TestLog4j.main(TestLog4j.java:30):%][main]HelloWorld4
+[main][2018-02-27 01:00:04,905][INFO][22][SYS][TestLog4j.java:33:com.cheng.log4j.TestLog4j.main(TestLog4j.java:33):%][main]从入门到放弃0
+[main][2018-02-27 01:00:04,905][INFO][22][SYS][TestLog4j.java:33:com.cheng.log4j.TestLog4j.main(TestLog4j.java:33):%][main]从入门到放弃1
+[main][2018-02-27 01:00:04,905][INFO][22][SYS][TestLog4j.java:33:com.cheng.log4j.TestLog4j.main(TestLog4j.java:33):%][main]从入门到放弃2
+[main][2018-02-27 01:00:04,905][INFO][22][SYS][TestLog4j.java:33:com.cheng.log4j.TestLog4j.main(TestLog4j.java:33):%][main]从入门到放弃3
+[main][2018-02-27 01:00:04,905][INFO][22][SYS][TestLog4j.java:33:com.cheng.log4j.TestLog4j.main(TestLog4j.java:33):%][main]从入门到放弃4
