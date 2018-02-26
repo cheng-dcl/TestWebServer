@@ -1,3 +1,13 @@
+ [const]:图片
+ [img1]:(image/10.jpg)
+ [img2]:(image/15.jpg)
+ [img3]:(image/20.jpg)
+ [img4]:(image/30.jpg)
+ 
+ [const]:网址，链接
+ [测试md]:image/index.md
+ [百度网址]:http://www.baidu.com 
+
 # TestWebServer2
 
 ## javaweb测试学习项目
@@ -10,4 +20,18 @@
 ### 首次提交，涉及内容如下： 
 >* 1.创建第一个javaweb项目 
 >* 2.类库的导入，ProjectSetting的设置，Tomcat调试设置，web.xml的简单设置，简单测试HttpServlet的作用。 
->* 3.两种方式（war包，war_explord）的发布到Tomcat容器的测试。
+>* 3.两种方式（war包，war_exploded）的发布到Tomcat容器的测试。
+
+
+### 图片
+> ![img1]
+
+图片1
+
+![img2]![img3]
+
+![img4]
+
+
+这是[百度网址]，跳转[测试md]
+
