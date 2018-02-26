@@ -16,7 +16,7 @@
     自定义通道处理类Handler和编解码器Decoder，Encoder。
 
 ## 源代码
-* 目录：[src/com/cheng/netty](TestWebServer/src/com/cheng/netty)
+* 目录：[src/com/cheng/netty](../src/com/cheng/netty)
 * 测试：先启动ServerMain，再启动ClientMain
 
 ## [Netty官方翻译文档](http://ifeve.com/netty5-user-guide/)
