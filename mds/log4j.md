@@ -1,10 +1,11 @@
-#log4j测试用例
-## 简介
-    Log4j是Apache的一个开放源代码项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件、甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等；
-    我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
+# log4j测试用例
+### 简介
+    Log4j是Apache的一个开放源代码项目，通过使用Log4j，可以控制日志信息输送的目的地是控制台、文件、GUI组件、
+    甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等；我们也可以控制每一条日志的输出格式；
+    通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
     使用：只需要做一个文件的配置即可。
     
-## 配置文件：
+### 配置文件：
 * xml文件
 * java特性文件（键=值）.properties
 ```
@@ -30,7 +31,7 @@ log4j.appender.OTHER.MaxBackupIndex=10
 log4j.appender.OTHER.layout=org.apache.log4j.PatternLayout
 log4j.appender.OTHER.layout.ConversionPattern=[%t][%d][%p][---][%F:%L]%m%n
 ```
-## 配置说明：  
+### 配置说明（如上）：  
 >* **1.配置根Logger：** ：  
    log4j.rootLogger = [ level ] , appenderName, appenderName, …  
    level：日志记录的级别，如info，error ...   
@@ -71,18 +72,20 @@ log4j.appender.OTHER.layout.ConversionPattern=[%t][%d][%p][---][%F:%L]%m%n
     7）FATAL    导致应用程序提前终止的严重错误。一般这些信息将立即呈现在状态控制台上。<br>
     8）OFF    最高级别，用于关闭日志记录。<br>
     
-## 使用流程：
+### 使用流程：
 1. 配置文件log4j.properties,如上
 2. 获取日志器  
-```public static final Logger logger = Logger.getLogger(String appenderName);```
-3. 读取配置  
+```
+   public static final Logger logger = Logger.getLogger(String appenderName);
+```
+3. 读取配置     
 ```
    BasicConfigurator.configure ()： 自动快速地使用缺省Log4j环境。 
    PropertyConfigurator.configure ( String configFilename) ：读取使用Java的特性文件编写的配置文件。 
    DOMConfigurator.configure ( String filename ) ：读取XML形式的配置文件。
 ```
 
-## 源代码
+### 源代码
 * 目录：[src/com/cheng/log4j](https://github.com/dcl-Cheng/TestWebServer/tree/master/src/com/cheng/log4j)
 * 测试：启动TestLog4j
   
