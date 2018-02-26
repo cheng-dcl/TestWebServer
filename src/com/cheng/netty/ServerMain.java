@@ -16,8 +16,8 @@ import io.netty.handler.codec.string.StringDecoder;
 
 /**
  * *  服务端启动类
- * *  @author:dcl-Cheng
- * *  @blog:www.dcl-Cheng.com
+ * *  @author: dcl-Cheng
+ * *  @github.io: https://dcl-cheng.github.io/
  **/
 public class ServerMain {
 

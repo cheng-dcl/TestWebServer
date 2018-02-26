@@ -12,8 +12,8 @@ import java.nio.ByteBuffer;
 
 /**
  * *  自定义的handler处理类
- * *  @author:dcl-Cheng
- * *  @blog:www.dcl-Cheng.com
+ * *  @author: dcl-Cheng
+ * *  @github.io: https://dcl-cheng.github.io/
  **/
 public class ServerHandler extends ChannelHandlerAdapter {
 

@@ -9,8 +9,8 @@ import io.netty.util.ReferenceCountUtil;
 
 /**
  * *  自定义的handler类
- * *  @author:dcl-Cheng
- * *  @blog:www.dcl-Cheng.com
+ * *  @author: dcl-Cheng
+ * *  @github.io: https://dcl-cheng.github.io/
  **/
 public class ClientHandler extends ChannelHandlerAdapter {
     /**

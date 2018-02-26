@@ -17,8 +17,8 @@ import java.net.InetAddress;
 
 /**
  * *  客户端启动类
- * *  @author:dcl-Cheng
- * *  @blog:www.dcl-Cheng.com
+ * *  @author: dcl-Cheng
+ * *  @github.io: https://dcl-cheng.github.io/
  **/
 public class ClientMain {
 

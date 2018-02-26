@@ -10,8 +10,8 @@ import java.io.PrintWriter;
 
 /**
  * *  测试http传参
- * *  @author:dcl-Cheng
- * *  @blog:www.dcl-Cheng.com
+ * *  @author: dcl-Cheng
+ * *  @github.io: https://dcl-cheng.github.io/
  **/
 @WebServlet("/test")
 public class TestParamServlet extends HttpServlet {
