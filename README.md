@@ -1,12 +1,12 @@
  [const]:图片
- [img1]:(image/10.jpg)
- [img2]:(image/15.jpg)
- [img3]:(image/20.jpg)
- [img4]:(image/30.jpg)
+ [img1]:image/10.jpg
+ [img2]:image/15.jpg
+ [img3]:image/20.jpg
+ [img4]:image/30.jpg
  
  [const]:网址，链接
  [测试md]:image/index.md
- [百度网址]:http://www.baidu.com 
+ [百度网址]:http://www.baidu.com "百度"
 
 # TestWebServer2
 
@@ -28,7 +28,7 @@
 
 图片1
 
-![img2]![img3]
+![img2]     ![img3]
 
 ![img4]
 
