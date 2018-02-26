@@ -2,7 +2,7 @@
  [img1]:../image/10.jpg
  
  [const]:网址，链接
- [测试md]:../README.md
+ [README.md]:../README.md
  [百度网址]:http://www.baidu.com "百度"
 
 # TestMD
