@@ -1,9 +1,4 @@
- [const]:图片
- [img1]:image/10.jpg
- 
- [const]:网址，链接
- [测试md]:image/test.md
- [百度网址]:http://www.baidu.com "百度"
+
 
 # TestWebServer
 
@@ -19,12 +14,12 @@
 >* 1.创建第一个`javaweb项目` 
 >* 2.类库的导入，`ProjectSetting`的设置，`Tomcat`调试设置，`web.xml`的简单设置，简单测试`HttpServlet`的作用。 
 >* 3.两种方式（**_war包，war_exploded_**）发布到Tomcat容器的测试。
->* 4._熟悉MD文件的简单编写，如本文和下面的图片及网址跳转_。
+>* 4._熟悉MD文件的简单编写，如本文和[图片及网址跳转](mds/test.md)_。
+
+
+### netty测试提交
+> [基于netty 5.0.0版本的测试](mds/netty.md) 
 
 
 
-### 图片
-> ![img1]
-
-这是[百度网址]，跳转[测试md]
 

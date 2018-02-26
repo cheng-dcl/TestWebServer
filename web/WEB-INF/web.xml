@@ -5,6 +5,6 @@
          version="3.1">
 
     <listener>
-        <listener-class>com.cheng.server.AppStartUp</listener-class>
+        <listener-class>com.cheng.servlet.AppStartUp</listener-class>
     </listener>
 </web-app>

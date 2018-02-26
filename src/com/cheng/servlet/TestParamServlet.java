@@ -1,4 +1,4 @@
-package com.cheng.server;
+package com.cheng.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
