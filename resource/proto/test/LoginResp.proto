@@ -12,6 +12,6 @@ message LoginResp{
 }
 
 message StatusCode{
-    optional int32 status = 1;
+    optional int32 status = 1 [default = 1];
     optional string tip = 2;
 }

@@ -62,9 +62,6 @@ public class ProtoClient {
             cf.channel().closeFuture().sync();
             logger.info("Proto Client end! localhost:8765");
 
-
-
-
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
