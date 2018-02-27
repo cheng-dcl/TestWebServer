@@ -24,6 +24,8 @@
 ### 3. log4j测试提交
 > [基于log4j的测试](mds/log4j.md) 
 
+### 4. protobuf测试提交
+> [基于protobuf java 2.4.1版本的测试](mds/protobuf.md) 
 
 
 

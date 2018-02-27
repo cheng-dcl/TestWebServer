@@ -1,0 +1,70 @@
+[main][2018-02-27 22:12:42,930][INFO][ProtoServer.java:55][main]Proto Server Begin! localhost:8765
+[nioEventLoopGroup-0-0][2018-02-27 22:12:47,977][INFO][ProtoClientHandler.java:32][channelRegistered]channelRegistered
+[nioEventLoopGroup-0-1][2018-02-27 22:12:47,984][INFO][ProtoClientHandler.java:44][channelActive]channelActive  ==> write to Server. 
+[main][2018-02-27 22:12:47,995][INFO][ProtoClient.java:58][main]Proto Client Connect! localhost:8765  == >  Write to Channel.
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,035][INFO][ProtoServerHandler.java:29][channelRegistered]channelRegistered
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,035][INFO][ProtoServerHandler.java:41][channelActive]channelActive
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,174][INFO][ProtoServerHandler.java:53][channelRead]channelRead   ==> Read from Client
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,174][INFO][ProtoServerHandler.java:56][channelRead]
+status: 0
+cmd: 0
+name: "dcl"
+
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,174][INFO][ProtoServerHandler.java:65][channelRead]then  write to Client..
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,177][INFO][ProtoServerHandler.java:97][channelReadComplete]channelReadComplete
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,230][INFO][ProtoClientHandler.java:77][channelRead]channelRead
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,231][INFO][ProtoClientHandler.java:79][channelRead]channelRead   ==> Read from Server
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,231][INFO][ProtoClientHandler.java:81][channelRead]
+status: 1
+cmd: 1
+name: "dclServer_1"
+
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,231][INFO][ProtoClientHandler.java:83][channelRead]then  write to Server..
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,232][INFO][ProtoClientHandler.java:100][channelReadComplete]channelReadComplete
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,232][INFO][ProtoServerHandler.java:53][channelRead]channelRead   ==> Read from Client
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,232][INFO][ProtoServerHandler.java:56][channelRead]
+status: 2
+cmd: 0
+name: "dclServer_1Client_2"
+
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,232][INFO][ProtoServerHandler.java:65][channelRead]then  write to Client..
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,232][INFO][ProtoServerHandler.java:97][channelReadComplete]channelReadComplete
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,240][INFO][ProtoClientHandler.java:77][channelRead]channelRead
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,240][INFO][ProtoClientHandler.java:79][channelRead]channelRead   ==> Read from Server
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,240][INFO][ProtoClientHandler.java:81][channelRead]
+status: 3
+cmd: 1
+name: "dclServer_1Client_2Server_3"
+
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,240][INFO][ProtoClientHandler.java:83][channelRead]then  write to Server..
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,241][INFO][ProtoClientHandler.java:100][channelReadComplete]channelReadComplete
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,241][INFO][ProtoServerHandler.java:53][channelRead]channelRead   ==> Read from Client
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,241][INFO][ProtoServerHandler.java:56][channelRead]
+status: 4
+cmd: 0
+name: "dclServer_1Client_2Server_3Client_4"
+
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,241][INFO][ProtoServerHandler.java:65][channelRead]then  write to Client..
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,241][INFO][ProtoServerHandler.java:97][channelReadComplete]channelReadComplete
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,242][INFO][ProtoClientHandler.java:77][channelRead]channelRead
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,242][INFO][ProtoClientHandler.java:79][channelRead]channelRead   ==> Read from Server
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,242][INFO][ProtoClientHandler.java:81][channelRead]
+status: 5
+cmd: 1
+name: "dclServer_1Client_2Server_3Client_4Server_5"
+
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,242][INFO][ProtoClientHandler.java:83][channelRead]then  write to Server..
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,243][INFO][ProtoServerHandler.java:53][channelRead]channelRead   ==> Read from Client
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,243][INFO][ProtoServerHandler.java:56][channelRead]
+status: 6
+cmd: 0
+name: "dclServer_1Client_2Server_3Client_4Server_5Client_6"
+
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,243][INFO][ProtoClientHandler.java:100][channelReadComplete]channelReadComplete
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,244][INFO][ProtoServerHandler.java:61][channelRead]ServerChannel Close!!!
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,244][INFO][ProtoServerHandler.java:97][channelReadComplete]channelReadComplete
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,245][INFO][ProtoServerHandler.java:47][channelInactive]channelInactive
+[nioEventLoopGroup-1-0][2018-02-27 22:12:48,245][INFO][ProtoServerHandler.java:35][channelUnregistered]channelUnregistered
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,245][INFO][ProtoClientHandler.java:71][channelInactive]channelInactive
+[nioEventLoopGroup-0-1][2018-02-27 22:12:48,245][INFO][ProtoClientHandler.java:38][channelUnregistered]channelUnregistered
+[main][2018-02-27 22:12:48,253][INFO][ProtoClient.java:63][main]Proto Client end! localhost:8765

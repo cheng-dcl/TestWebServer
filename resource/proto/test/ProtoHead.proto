@@ -1,0 +1,12 @@
+
+package proto;
+
+option java_package = "com.cheng.message.prototest";
+option java_outer_classname = "ProtoHeadPro";
+
+enum ProtoHead{
+    LOGIN_REQ = 0;
+    LOGIN_RESP = 1;
+    GETINFO_REQ = 2;
+    GETINFO_RESP = 3;
+}

@@ -9,4 +9,5 @@ public class LoggerType {
 
     public final static String SYS = "SYS";
     public final static String OTHER= "OTHER";
+    public final static String PROTO= "PROTO";
 }
