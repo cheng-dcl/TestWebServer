@@ -1,5 +1,6 @@
 package com.cheng.netty;
 
+import com.cheng.log4j.LoggerType;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -12,7 +13,14 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.DelimiterBasedFrameDecoder;
 import io.netty.handler.codec.FixedLengthFrameDecoder;
+import io.netty.handler.codec.serialization.ClassResolver;
+import io.netty.handler.codec.serialization.ClassResolvers;
+import io.netty.handler.codec.serialization.ObjectDecoder;
+import io.netty.handler.codec.serialization.ObjectEncoder;
 import io.netty.handler.codec.string.StringDecoder;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 
 /**
  * *  服务端启动类
@@ -22,6 +30,9 @@ import io.netty.handler.codec.string.StringDecoder;
 public class ServerMain {
 
     public static void main(String[] args){
+
+        //怎么肥事，项目中配置了log4j后，不用的地方也得设置地址
+        PropertyConfigurator.configure("resource/log4j.properties");
 
 
         /**
@@ -56,9 +67,9 @@ public class ServerMain {
                          * 3. 设置实际处理数据的类 ，自定义Handler   ServerHandler
                          */
 //                        @Override
-//                        protected void initChannel(SocketChannel socketChannel) throws Exception {
-//                            socketChannel.pipeline().addLast(new ServerHandler());
-//                        }
+////                        protected void initChannel(SocketChannel socketChannel) throws Exception {
+////                            socketChannel.pipeline().addLast(new ServerHandler());
+////                        }
 
                         /**
                          *  TCP粘包、拆包问题
@@ -83,12 +94,26 @@ public class ServerMain {
                          *  注意顺序：handler最后添加
                          */
 
+//                        @Override
+//                        protected void initChannel(SocketChannel socketChannel) throws Exception {
+//                            //设置定长字符串接收
+//                            socketChannel.pipeline().addLast(new FixedLengthFrameDecoder(5));
+//                            //设置字符串形式的解码，使用StringDecoder后，在通信不用转成ByteBuf类
+//                            socketChannel.pipeline().addLast(new StringDecoder());
+//                            socketChannel.pipeline().addLast(new ServerHandler());
+//                        }
+
+
+                        /**
+                         *  传输对象的编解码设置
+                         */
+
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            //设置定长字符串接收
-                            socketChannel.pipeline().addLast(new FixedLengthFrameDecoder(5));
-                            //设置字符串形式的解码，使用StringDecoder后，在通信不用转成ByteBuf类
-                            socketChannel.pipeline().addLast(new StringDecoder());
+
+                            socketChannel.pipeline().addLast(new ObjectDecoder(1024 * 1024,
+                                    ClassResolvers.weakCachingResolver(this.getClass().getClassLoader())));
+                            socketChannel.pipeline().addLast(new ObjectEncoder());
                             socketChannel.pipeline().addLast(new ServerHandler());
                         }
                     });
@@ -109,4 +134,7 @@ public class ServerMain {
         }
 
     }
+
+
+
 }

@@ -28,8 +28,13 @@ public class ClientHandler extends ChannelHandlerAdapter {
 //        buf.readBytes(bytes);
 //        String body = new String(bytes,"utf-8");
 
-        String body = (String)msg;
+//        String body = (String)msg;
+//        System.out.println("Client 收到服务器的返回信息:" + body);
+
+        Response body = (Response)msg;
         System.out.println("Client 收到服务器的返回信息:" + body);
+
+
         ReferenceCountUtil.release(msg);
     }
 

@@ -11,6 +11,9 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.DelimiterBasedFrameDecoder;
 import io.netty.handler.codec.FixedLengthFrameDecoder;
+import io.netty.handler.codec.serialization.ClassResolvers;
+import io.netty.handler.codec.serialization.ObjectDecoder;
+import io.netty.handler.codec.serialization.ObjectEncoder;
 import io.netty.handler.codec.string.StringDecoder;
 
 import java.net.InetAddress;
@@ -39,13 +42,13 @@ public class ClientMain {
 //                            socketChannel.pipeline().addLast(new ClientHandler());
 //                        }
 
-                        @Override
-                        protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            ByteBuf buf = Unpooled.copiedBuffer("$_".getBytes());
-                            socketChannel.pipeline().addLast(new DelimiterBasedFrameDecoder(1024,buf));
-                            socketChannel.pipeline().addLast(new StringDecoder());
-                            socketChannel.pipeline().addLast(new ClientHandler());
-                        }
+//                        @Override
+//                        protected void initChannel(SocketChannel socketChannel) throws Exception {
+//                            ByteBuf buf = Unpooled.copiedBuffer("$_".getBytes());
+//                            socketChannel.pipeline().addLast(new DelimiterBasedFrameDecoder(1024,buf));
+//                            socketChannel.pipeline().addLast(new StringDecoder());
+//                            socketChannel.pipeline().addLast(new ClientHandler());
+//                        }
 
 //                        @Override
 //                        protected void initChannel(SocketChannel socketChannel) throws Exception {
@@ -55,6 +58,15 @@ public class ClientMain {
 //                            socketChannel.pipeline().addLast(new StringDecoder());
 //                            socketChannel.pipeline().addLast(new ClientHandler());
 //                        }
+
+                        @Override
+                        protected void initChannel(SocketChannel socketChannel) throws Exception {
+
+                            socketChannel.pipeline().addLast(new ObjectDecoder( 1024,
+                                    ClassResolvers.weakCachingResolver(this.getClass().getClassLoader())));
+                            socketChannel.pipeline().addLast(new ObjectEncoder());
+                            socketChannel.pipeline().addLast(new ClientHandler());
+                        }
 
                     });
 
@@ -85,12 +97,25 @@ public class ClientMain {
              * TCP粘包、拆包问题
              * 设置定长类：FixedLengthFrameDecoder 和 解码器StringDecoder后
              */
-            Thread.sleep(1000);
-            cf.channel().writeAndFlush(Unpooled.copiedBuffer("123456789".getBytes()));
-            cf.channel().writeAndFlush(Unpooled.copiedBuffer("4444".getBytes()));
-            Thread.sleep(3000);
-            cf.channel().writeAndFlush(Unpooled.copiedBuffer("5555566".getBytes()));
+//            Thread.sleep(1000);
+//            cf.channel().writeAndFlush(Unpooled.copiedBuffer("123456789".getBytes()));
+//            cf.channel().writeAndFlush(Unpooled.copiedBuffer("4444".getBytes()));
+//            Thread.sleep(3000);
+//            cf.channel().writeAndFlush(Unpooled.copiedBuffer("5555566".getBytes()));
 
+
+
+            Request request;
+            request = new Request();
+            request.setReqId(1);
+            request.setName("dcl");
+            cf.channel().writeAndFlush(request);
+
+            Thread.sleep(2000);
+            request = new Request();
+            request.setReqId(2);
+            request.setName("test");
+            cf.channel().writeAndFlush(request);
 
             cf.channel().closeFuture().sync();
             group.shutdownGracefully();

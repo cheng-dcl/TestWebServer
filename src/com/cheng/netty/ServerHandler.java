@@ -7,6 +7,7 @@ import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelPromise;
 
+import java.io.Serializable;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 
@@ -35,15 +36,32 @@ public class ServerHandler extends ChannelHandlerAdapter {
 //        buf.readBytes(bytes);
 //        String body = new String(bytes,"utf-8");
 
+        /**
+         * 使用String解码器后,msg已经解码为String了
+         */
+//        String body = (String)msg;
+//
+//        System.out.println("Server:" + body);
+//        String response = "Server -> Client:" + body + "$_";
+//        ctx.writeAndFlush(Unpooled.copiedBuffer(response.getBytes()));
+            //.addListener(ChannelFutureListener.CLOSE);
 
         /**
-         * 使用解码器后,msg已经解码为String了
+         * 使用object解码器后,msg已经解码为String了
          */
-        String body = (String)msg;
-        System.out.println("Server:" + body);
-        String response = "Server -> Client:" + body + "$_";
-        ctx.writeAndFlush(Unpooled.copiedBuffer(response.getBytes()));
-                //.addListener(ChannelFutureListener.CLOSE);
+        Request request = (Request)msg;
+
+        System.out.println("Server:" + request);
+
+        Response response = new Response();
+        response.setResponseId(1);
+        response.setName("response");
+        response.setReq(request);
+        ctx.writeAndFlush(response);
+        //String responseS = "Server -> Client:" + response;
+        //ctx.writeAndFlush(responseS);
+            //.addListener(ChannelFutureListener.CLOSE);
+
 
     }
 
