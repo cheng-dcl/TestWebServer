@@ -10,7 +10,7 @@
 ### 安装
 * **Java**  
    需要两个文件 **`protobuf_java_x_x.jar`**和对应版本的**`protoc.exe`**，用与解析proto文件为java文件。
-   https://github.com/google/protobuf/releases下载对应版本源码和protoc.exe工具。[并使用原方式生成jar包。](http://blog.csdn.net/u013656135/article/details/52194248)
+   [下载对应版本源码和protoc.exe工具](https://github.com/google/protobuf/releases)。[并使用原方式生成jar包。](http://blog.csdn.net/u013656135/article/details/52194248)
  
 * **C#**
    生成文件c#用protobuf的官方方式没看，貌似比较复杂，环境也比较复杂。简单方式下载protobuf-net工具。  
