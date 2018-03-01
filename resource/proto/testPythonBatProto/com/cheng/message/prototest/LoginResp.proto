@@ -3,7 +3,7 @@ package proto;
 option java_package = "com.cheng.message.prototest";
 option java_outer_classname = "LoginRespPro";
 
-import "proto/test/PlayerMsg.proto";
+import "com/cheng/message/prototest/PlayerMsg.proto";
 
 message LoginResp{
     optional PlayerMsg player = 1;

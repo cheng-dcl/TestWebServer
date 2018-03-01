@@ -43,12 +43,12 @@ public final class LoginReqPro {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cheng.message.prototest.LoginReqPro.internal_static_proto_LoginReq_descriptor;
+      return LoginReqPro.internal_static_proto_LoginReq_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cheng.message.prototest.LoginReqPro.internal_static_proto_LoginReq_fieldAccessorTable;
+      return LoginReqPro.internal_static_proto_LoginReq_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -197,41 +197,41 @@ public final class LoginReqPro {
       return super.writeReplace();
     }
     
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseFrom(
+    public static LoginReqPro.LoginReq parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseFrom(
+    public static LoginReqPro.LoginReq parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseFrom(byte[] data)
+    public static LoginReqPro.LoginReq parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseFrom(
+    public static LoginReqPro.LoginReq parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseFrom(java.io.InputStream input)
+    public static LoginReqPro.LoginReq parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseFrom(
+    public static LoginReqPro.LoginReq parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseDelimitedFrom(java.io.InputStream input)
+    public static LoginReqPro.LoginReq parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -240,7 +240,7 @@ public final class LoginReqPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseDelimitedFrom(
+    public static LoginReqPro.LoginReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -251,12 +251,12 @@ public final class LoginReqPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseFrom(
+    public static LoginReqPro.LoginReq parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginReqPro.LoginReq parseFrom(
+    public static LoginReqPro.LoginReq parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -266,7 +266,7 @@ public final class LoginReqPro {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.cheng.message.prototest.LoginReqPro.LoginReq prototype) {
+    public static Builder newBuilder(LoginReqPro.LoginReq prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -279,18 +279,18 @@ public final class LoginReqPro {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.cheng.message.prototest.LoginReqPro.LoginReqOrBuilder {
+       implements LoginReqPro.LoginReqOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.cheng.message.prototest.LoginReqPro.internal_static_proto_LoginReq_descriptor;
+        return LoginReqPro.internal_static_proto_LoginReq_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.cheng.message.prototest.LoginReqPro.internal_static_proto_LoginReq_fieldAccessorTable;
+        return LoginReqPro.internal_static_proto_LoginReq_fieldAccessorTable;
       }
       
-      // Construct using com.cheng.message.prototest.LoginReqPro.LoginReq.newBuilder()
+      // Construct using LoginReqPro.LoginReq.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -324,24 +324,24 @@ public final class LoginReqPro {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.cheng.message.prototest.LoginReqPro.LoginReq.getDescriptor();
+        return LoginReqPro.LoginReq.getDescriptor();
       }
       
-      public com.cheng.message.prototest.LoginReqPro.LoginReq getDefaultInstanceForType() {
-        return com.cheng.message.prototest.LoginReqPro.LoginReq.getDefaultInstance();
+      public LoginReqPro.LoginReq getDefaultInstanceForType() {
+        return LoginReqPro.LoginReq.getDefaultInstance();
       }
       
-      public com.cheng.message.prototest.LoginReqPro.LoginReq build() {
-        com.cheng.message.prototest.LoginReqPro.LoginReq result = buildPartial();
+      public LoginReqPro.LoginReq build() {
+        LoginReqPro.LoginReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private com.cheng.message.prototest.LoginReqPro.LoginReq buildParsed()
+      private LoginReqPro.LoginReq buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        com.cheng.message.prototest.LoginReqPro.LoginReq result = buildPartial();
+        LoginReqPro.LoginReq result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -349,8 +349,8 @@ public final class LoginReqPro {
         return result;
       }
       
-      public com.cheng.message.prototest.LoginReqPro.LoginReq buildPartial() {
-        com.cheng.message.prototest.LoginReqPro.LoginReq result = new com.cheng.message.prototest.LoginReqPro.LoginReq(this);
+      public LoginReqPro.LoginReq buildPartial() {
+        LoginReqPro.LoginReq result = new LoginReqPro.LoginReq(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -371,16 +371,16 @@ public final class LoginReqPro {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.cheng.message.prototest.LoginReqPro.LoginReq) {
-          return mergeFrom((com.cheng.message.prototest.LoginReqPro.LoginReq)other);
+        if (other instanceof LoginReqPro.LoginReq) {
+          return mergeFrom((LoginReqPro.LoginReq)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(com.cheng.message.prototest.LoginReqPro.LoginReq other) {
-        if (other == com.cheng.message.prototest.LoginReqPro.LoginReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(LoginReqPro.LoginReq other) {
+        if (other == LoginReqPro.LoginReq.getDefaultInstance()) return this;
         if (other.hasId()) {
           setId(other.getId());
         }
@@ -588,8 +588,8 @@ public final class LoginReqPro {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_proto_LoginReq_descriptor,
               new java.lang.String[] { "Id", "Password", "Name", },
-              com.cheng.message.prototest.LoginReqPro.LoginReq.class,
-              com.cheng.message.prototest.LoginReqPro.LoginReq.Builder.class);
+              LoginReqPro.LoginReq.class,
+              LoginReqPro.LoginReq.Builder.class);
           return null;
         }
       };

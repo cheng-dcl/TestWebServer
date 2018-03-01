@@ -43,12 +43,12 @@ public final class DataPro {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cheng.message.prototest.DataPro.internal_static_proto_DataMessage_descriptor;
+      return DataPro.internal_static_proto_DataMessage_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cheng.message.prototest.DataPro.internal_static_proto_DataMessage_fieldAccessorTable;
+      return DataPro.internal_static_proto_DataMessage_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -163,41 +163,41 @@ public final class DataPro {
       return super.writeReplace();
     }
     
-    public static com.cheng.message.prototest.DataPro.DataMessage parseFrom(
+    public static DataPro.DataMessage parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.DataPro.DataMessage parseFrom(
+    public static DataPro.DataMessage parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.DataPro.DataMessage parseFrom(byte[] data)
+    public static DataPro.DataMessage parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.DataPro.DataMessage parseFrom(
+    public static DataPro.DataMessage parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.DataPro.DataMessage parseFrom(java.io.InputStream input)
+    public static DataPro.DataMessage parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.DataPro.DataMessage parseFrom(
+    public static DataPro.DataMessage parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.DataPro.DataMessage parseDelimitedFrom(java.io.InputStream input)
+    public static DataPro.DataMessage parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -206,7 +206,7 @@ public final class DataPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.DataPro.DataMessage parseDelimitedFrom(
+    public static DataPro.DataMessage parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -217,12 +217,12 @@ public final class DataPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.DataPro.DataMessage parseFrom(
+    public static DataPro.DataMessage parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.DataPro.DataMessage parseFrom(
+    public static DataPro.DataMessage parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -232,7 +232,7 @@ public final class DataPro {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.cheng.message.prototest.DataPro.DataMessage prototype) {
+    public static Builder newBuilder(DataPro.DataMessage prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -245,18 +245,18 @@ public final class DataPro {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.cheng.message.prototest.DataPro.DataMessageOrBuilder {
+       implements DataPro.DataMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.cheng.message.prototest.DataPro.internal_static_proto_DataMessage_descriptor;
+        return DataPro.internal_static_proto_DataMessage_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.cheng.message.prototest.DataPro.internal_static_proto_DataMessage_fieldAccessorTable;
+        return DataPro.internal_static_proto_DataMessage_fieldAccessorTable;
       }
       
-      // Construct using com.cheng.message.prototest.DataPro.DataMessage.newBuilder()
+      // Construct using DataPro.DataMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -290,24 +290,24 @@ public final class DataPro {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.cheng.message.prototest.DataPro.DataMessage.getDescriptor();
+        return DataPro.DataMessage.getDescriptor();
       }
       
-      public com.cheng.message.prototest.DataPro.DataMessage getDefaultInstanceForType() {
-        return com.cheng.message.prototest.DataPro.DataMessage.getDefaultInstance();
+      public DataPro.DataMessage getDefaultInstanceForType() {
+        return DataPro.DataMessage.getDefaultInstance();
       }
       
-      public com.cheng.message.prototest.DataPro.DataMessage build() {
-        com.cheng.message.prototest.DataPro.DataMessage result = buildPartial();
+      public DataPro.DataMessage build() {
+        DataPro.DataMessage result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private com.cheng.message.prototest.DataPro.DataMessage buildParsed()
+      private DataPro.DataMessage buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        com.cheng.message.prototest.DataPro.DataMessage result = buildPartial();
+        DataPro.DataMessage result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -315,8 +315,8 @@ public final class DataPro {
         return result;
       }
       
-      public com.cheng.message.prototest.DataPro.DataMessage buildPartial() {
-        com.cheng.message.prototest.DataPro.DataMessage result = new com.cheng.message.prototest.DataPro.DataMessage(this);
+      public DataPro.DataMessage buildPartial() {
+        DataPro.DataMessage result = new DataPro.DataMessage(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -337,16 +337,16 @@ public final class DataPro {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.cheng.message.prototest.DataPro.DataMessage) {
-          return mergeFrom((com.cheng.message.prototest.DataPro.DataMessage)other);
+        if (other instanceof DataPro.DataMessage) {
+          return mergeFrom((DataPro.DataMessage)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(com.cheng.message.prototest.DataPro.DataMessage other) {
-        if (other == com.cheng.message.prototest.DataPro.DataMessage.getDefaultInstance()) return this;
+      public Builder mergeFrom(DataPro.DataMessage other) {
+        if (other == DataPro.DataMessage.getDefaultInstance()) return this;
         if (other.hasStatus()) {
           setStatus(other.getStatus());
         }
@@ -527,8 +527,8 @@ public final class DataPro {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_proto_DataMessage_descriptor,
               new java.lang.String[] { "Status", "Cmd", "Name", },
-              com.cheng.message.prototest.DataPro.DataMessage.class,
-              com.cheng.message.prototest.DataPro.DataMessage.Builder.class);
+              DataPro.DataMessage.class,
+              DataPro.DataMessage.Builder.class);
           return null;
         }
       };

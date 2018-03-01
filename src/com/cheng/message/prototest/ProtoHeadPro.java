@@ -56,7 +56,7 @@ public final class ProtoHeadPro {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.cheng.message.prototest.ProtoHeadPro.getDescriptor().getEnumTypes().get(0);
+      return ProtoHeadPro.getDescriptor().getEnumTypes().get(0);
     }
     
     private static final ProtoHead[] VALUES = {

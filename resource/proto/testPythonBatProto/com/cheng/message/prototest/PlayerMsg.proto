@@ -1,0 +1,12 @@
+package proto;
+
+option java_package = "com.cheng.message.prototest";
+option java_outer_classname = "PlayerMsgPro";
+
+message PlayerMsg{
+
+    optional int32 id = 1;
+    optional string name = 2;
+    optional string age = 3;
+    optional int32 level = 4;
+}

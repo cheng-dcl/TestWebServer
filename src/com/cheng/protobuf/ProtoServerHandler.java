@@ -1,8 +1,8 @@
 package com.cheng.protobuf;
 
 import com.cheng.log4j.LoggerType;
-import com.cheng.message.prototest.*;
-import io.netty.channel.ChannelFutureListener;
+import com.cheng.message.prototest.DataPro;
+import com.cheng.message.prototest.ProtoHeadPro;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import org.apache.log4j.Logger;

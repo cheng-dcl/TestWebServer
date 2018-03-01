@@ -47,12 +47,12 @@ public final class PlayerMsgPro {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cheng.message.prototest.PlayerMsgPro.internal_static_proto_PlayerMsg_descriptor;
+      return PlayerMsgPro.internal_static_proto_PlayerMsg_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cheng.message.prototest.PlayerMsgPro.internal_static_proto_PlayerMsg_fieldAccessorTable;
+      return PlayerMsgPro.internal_static_proto_PlayerMsg_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -207,41 +207,41 @@ public final class PlayerMsgPro {
       return super.writeReplace();
     }
     
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseFrom(
+    public static PlayerMsgPro.PlayerMsg parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseFrom(
+    public static PlayerMsgPro.PlayerMsg parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseFrom(byte[] data)
+    public static PlayerMsgPro.PlayerMsg parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseFrom(
+    public static PlayerMsgPro.PlayerMsg parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseFrom(java.io.InputStream input)
+    public static PlayerMsgPro.PlayerMsg parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseFrom(
+    public static PlayerMsgPro.PlayerMsg parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseDelimitedFrom(java.io.InputStream input)
+    public static PlayerMsgPro.PlayerMsg parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -250,7 +250,7 @@ public final class PlayerMsgPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseDelimitedFrom(
+    public static PlayerMsgPro.PlayerMsg parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -261,12 +261,12 @@ public final class PlayerMsgPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseFrom(
+    public static PlayerMsgPro.PlayerMsg parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.PlayerMsgPro.PlayerMsg parseFrom(
+    public static PlayerMsgPro.PlayerMsg parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -276,7 +276,7 @@ public final class PlayerMsgPro {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.cheng.message.prototest.PlayerMsgPro.PlayerMsg prototype) {
+    public static Builder newBuilder(PlayerMsgPro.PlayerMsg prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -289,18 +289,18 @@ public final class PlayerMsgPro {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.cheng.message.prototest.PlayerMsgPro.PlayerMsgOrBuilder {
+       implements PlayerMsgPro.PlayerMsgOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.cheng.message.prototest.PlayerMsgPro.internal_static_proto_PlayerMsg_descriptor;
+        return PlayerMsgPro.internal_static_proto_PlayerMsg_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.cheng.message.prototest.PlayerMsgPro.internal_static_proto_PlayerMsg_fieldAccessorTable;
+        return PlayerMsgPro.internal_static_proto_PlayerMsg_fieldAccessorTable;
       }
       
-      // Construct using com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.newBuilder()
+      // Construct using PlayerMsgPro.PlayerMsg.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -336,24 +336,24 @@ public final class PlayerMsgPro {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.getDescriptor();
+        return PlayerMsgPro.PlayerMsg.getDescriptor();
       }
       
-      public com.cheng.message.prototest.PlayerMsgPro.PlayerMsg getDefaultInstanceForType() {
-        return com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.getDefaultInstance();
+      public PlayerMsgPro.PlayerMsg getDefaultInstanceForType() {
+        return PlayerMsgPro.PlayerMsg.getDefaultInstance();
       }
       
-      public com.cheng.message.prototest.PlayerMsgPro.PlayerMsg build() {
-        com.cheng.message.prototest.PlayerMsgPro.PlayerMsg result = buildPartial();
+      public PlayerMsgPro.PlayerMsg build() {
+        PlayerMsgPro.PlayerMsg result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private com.cheng.message.prototest.PlayerMsgPro.PlayerMsg buildParsed()
+      private PlayerMsgPro.PlayerMsg buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        com.cheng.message.prototest.PlayerMsgPro.PlayerMsg result = buildPartial();
+        PlayerMsgPro.PlayerMsg result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -361,8 +361,8 @@ public final class PlayerMsgPro {
         return result;
       }
       
-      public com.cheng.message.prototest.PlayerMsgPro.PlayerMsg buildPartial() {
-        com.cheng.message.prototest.PlayerMsgPro.PlayerMsg result = new com.cheng.message.prototest.PlayerMsgPro.PlayerMsg(this);
+      public PlayerMsgPro.PlayerMsg buildPartial() {
+        PlayerMsgPro.PlayerMsg result = new PlayerMsgPro.PlayerMsg(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -387,16 +387,16 @@ public final class PlayerMsgPro {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.cheng.message.prototest.PlayerMsgPro.PlayerMsg) {
-          return mergeFrom((com.cheng.message.prototest.PlayerMsgPro.PlayerMsg)other);
+        if (other instanceof PlayerMsgPro.PlayerMsg) {
+          return mergeFrom((PlayerMsgPro.PlayerMsg)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(com.cheng.message.prototest.PlayerMsgPro.PlayerMsg other) {
-        if (other == com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.getDefaultInstance()) return this;
+      public Builder mergeFrom(PlayerMsgPro.PlayerMsg other) {
+        if (other == PlayerMsgPro.PlayerMsg.getDefaultInstance()) return this;
         if (other.hasId()) {
           setId(other.getId());
         }
@@ -621,8 +621,8 @@ public final class PlayerMsgPro {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_proto_PlayerMsg_descriptor,
               new java.lang.String[] { "Id", "Name", "Age", "Level", },
-              com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.class,
-              com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.Builder.class);
+              PlayerMsgPro.PlayerMsg.class,
+              PlayerMsgPro.PlayerMsg.Builder.class);
           return null;
         }
       };

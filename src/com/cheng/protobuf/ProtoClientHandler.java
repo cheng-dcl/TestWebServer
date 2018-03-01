@@ -2,8 +2,6 @@ package com.cheng.protobuf;
 
 import com.cheng.log4j.LoggerType;
 import com.cheng.message.prototest.DataPro;
-import com.cheng.message.prototest.LoginReqPro;
-import com.cheng.message.prototest.LoginRespPro;
 import com.cheng.message.prototest.ProtoHeadPro;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;

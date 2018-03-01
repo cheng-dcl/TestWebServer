@@ -13,13 +13,13 @@ public final class LoginRespPro {
     
     // optional .proto.PlayerMsg player = 1;
     boolean hasPlayer();
-    com.cheng.message.prototest.PlayerMsgPro.PlayerMsg getPlayer();
-    com.cheng.message.prototest.PlayerMsgPro.PlayerMsgOrBuilder getPlayerOrBuilder();
+    PlayerMsgPro.PlayerMsg getPlayer();
+    PlayerMsgPro.PlayerMsgOrBuilder getPlayerOrBuilder();
     
     // optional .proto.StatusCode status = 2;
     boolean hasStatus();
-    com.cheng.message.prototest.LoginRespPro.StatusCode getStatus();
-    com.cheng.message.prototest.LoginRespPro.StatusCodeOrBuilder getStatusOrBuilder();
+    LoginRespPro.StatusCode getStatus();
+    LoginRespPro.StatusCodeOrBuilder getStatusOrBuilder();
   }
   public static final class LoginResp extends
       com.google.protobuf.GeneratedMessage
@@ -41,44 +41,44 @@ public final class LoginRespPro {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cheng.message.prototest.LoginRespPro.internal_static_proto_LoginResp_descriptor;
+      return LoginRespPro.internal_static_proto_LoginResp_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cheng.message.prototest.LoginRespPro.internal_static_proto_LoginResp_fieldAccessorTable;
+      return LoginRespPro.internal_static_proto_LoginResp_fieldAccessorTable;
     }
     
     private int bitField0_;
     // optional .proto.PlayerMsg player = 1;
     public static final int PLAYER_FIELD_NUMBER = 1;
-    private com.cheng.message.prototest.PlayerMsgPro.PlayerMsg player_;
+    private PlayerMsgPro.PlayerMsg player_;
     public boolean hasPlayer() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public com.cheng.message.prototest.PlayerMsgPro.PlayerMsg getPlayer() {
+    public PlayerMsgPro.PlayerMsg getPlayer() {
       return player_;
     }
-    public com.cheng.message.prototest.PlayerMsgPro.PlayerMsgOrBuilder getPlayerOrBuilder() {
+    public PlayerMsgPro.PlayerMsgOrBuilder getPlayerOrBuilder() {
       return player_;
     }
     
     // optional .proto.StatusCode status = 2;
     public static final int STATUS_FIELD_NUMBER = 2;
-    private com.cheng.message.prototest.LoginRespPro.StatusCode status_;
+    private LoginRespPro.StatusCode status_;
     public boolean hasStatus() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public com.cheng.message.prototest.LoginRespPro.StatusCode getStatus() {
+    public LoginRespPro.StatusCode getStatus() {
       return status_;
     }
-    public com.cheng.message.prototest.LoginRespPro.StatusCodeOrBuilder getStatusOrBuilder() {
+    public LoginRespPro.StatusCodeOrBuilder getStatusOrBuilder() {
       return status_;
     }
     
     private void initFields() {
-      player_ = com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.getDefaultInstance();
-      status_ = com.cheng.message.prototest.LoginRespPro.StatusCode.getDefaultInstance();
+      player_ = PlayerMsgPro.PlayerMsg.getDefaultInstance();
+      status_ = LoginRespPro.StatusCode.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -127,41 +127,41 @@ public final class LoginRespPro {
       return super.writeReplace();
     }
     
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseFrom(
+    public static LoginRespPro.LoginResp parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseFrom(
+    public static LoginRespPro.LoginResp parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseFrom(byte[] data)
+    public static LoginRespPro.LoginResp parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseFrom(
+    public static LoginRespPro.LoginResp parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseFrom(java.io.InputStream input)
+    public static LoginRespPro.LoginResp parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseFrom(
+    public static LoginRespPro.LoginResp parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseDelimitedFrom(java.io.InputStream input)
+    public static LoginRespPro.LoginResp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -170,7 +170,7 @@ public final class LoginRespPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseDelimitedFrom(
+    public static LoginRespPro.LoginResp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -181,12 +181,12 @@ public final class LoginRespPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseFrom(
+    public static LoginRespPro.LoginResp parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.LoginResp parseFrom(
+    public static LoginRespPro.LoginResp parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -196,7 +196,7 @@ public final class LoginRespPro {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.cheng.message.prototest.LoginRespPro.LoginResp prototype) {
+    public static Builder newBuilder(LoginRespPro.LoginResp prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -209,18 +209,18 @@ public final class LoginRespPro {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.cheng.message.prototest.LoginRespPro.LoginRespOrBuilder {
+       implements LoginRespPro.LoginRespOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.cheng.message.prototest.LoginRespPro.internal_static_proto_LoginResp_descriptor;
+        return LoginRespPro.internal_static_proto_LoginResp_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.cheng.message.prototest.LoginRespPro.internal_static_proto_LoginResp_fieldAccessorTable;
+        return LoginRespPro.internal_static_proto_LoginResp_fieldAccessorTable;
       }
       
-      // Construct using com.cheng.message.prototest.LoginRespPro.LoginResp.newBuilder()
+      // Construct using LoginRespPro.LoginResp.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -242,13 +242,13 @@ public final class LoginRespPro {
       public Builder clear() {
         super.clear();
         if (playerBuilder_ == null) {
-          player_ = com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.getDefaultInstance();
+          player_ = PlayerMsgPro.PlayerMsg.getDefaultInstance();
         } else {
           playerBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         if (statusBuilder_ == null) {
-          status_ = com.cheng.message.prototest.LoginRespPro.StatusCode.getDefaultInstance();
+          status_ = LoginRespPro.StatusCode.getDefaultInstance();
         } else {
           statusBuilder_.clear();
         }
@@ -262,24 +262,24 @@ public final class LoginRespPro {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.cheng.message.prototest.LoginRespPro.LoginResp.getDescriptor();
+        return LoginRespPro.LoginResp.getDescriptor();
       }
       
-      public com.cheng.message.prototest.LoginRespPro.LoginResp getDefaultInstanceForType() {
-        return com.cheng.message.prototest.LoginRespPro.LoginResp.getDefaultInstance();
+      public LoginRespPro.LoginResp getDefaultInstanceForType() {
+        return LoginRespPro.LoginResp.getDefaultInstance();
       }
       
-      public com.cheng.message.prototest.LoginRespPro.LoginResp build() {
-        com.cheng.message.prototest.LoginRespPro.LoginResp result = buildPartial();
+      public LoginRespPro.LoginResp build() {
+        LoginRespPro.LoginResp result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private com.cheng.message.prototest.LoginRespPro.LoginResp buildParsed()
+      private LoginRespPro.LoginResp buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        com.cheng.message.prototest.LoginRespPro.LoginResp result = buildPartial();
+        LoginRespPro.LoginResp result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -287,8 +287,8 @@ public final class LoginRespPro {
         return result;
       }
       
-      public com.cheng.message.prototest.LoginRespPro.LoginResp buildPartial() {
-        com.cheng.message.prototest.LoginRespPro.LoginResp result = new com.cheng.message.prototest.LoginRespPro.LoginResp(this);
+      public LoginRespPro.LoginResp buildPartial() {
+        LoginRespPro.LoginResp result = new LoginRespPro.LoginResp(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -313,16 +313,16 @@ public final class LoginRespPro {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.cheng.message.prototest.LoginRespPro.LoginResp) {
-          return mergeFrom((com.cheng.message.prototest.LoginRespPro.LoginResp)other);
+        if (other instanceof LoginRespPro.LoginResp) {
+          return mergeFrom((LoginRespPro.LoginResp)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(com.cheng.message.prototest.LoginRespPro.LoginResp other) {
-        if (other == com.cheng.message.prototest.LoginRespPro.LoginResp.getDefaultInstance()) return this;
+      public Builder mergeFrom(LoginRespPro.LoginResp other) {
+        if (other == LoginRespPro.LoginResp.getDefaultInstance()) return this;
         if (other.hasPlayer()) {
           mergePlayer(other.getPlayer());
         }
@@ -361,7 +361,7 @@ public final class LoginRespPro {
               break;
             }
             case 10: {
-              com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.Builder subBuilder = com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.newBuilder();
+              PlayerMsgPro.PlayerMsg.Builder subBuilder = PlayerMsgPro.PlayerMsg.newBuilder();
               if (hasPlayer()) {
                 subBuilder.mergeFrom(getPlayer());
               }
@@ -370,7 +370,7 @@ public final class LoginRespPro {
               break;
             }
             case 18: {
-              com.cheng.message.prototest.LoginRespPro.StatusCode.Builder subBuilder = com.cheng.message.prototest.LoginRespPro.StatusCode.newBuilder();
+              LoginRespPro.StatusCode.Builder subBuilder = LoginRespPro.StatusCode.newBuilder();
               if (hasStatus()) {
                 subBuilder.mergeFrom(getStatus());
               }
@@ -385,20 +385,20 @@ public final class LoginRespPro {
       private int bitField0_;
       
       // optional .proto.PlayerMsg player = 1;
-      private com.cheng.message.prototest.PlayerMsgPro.PlayerMsg player_ = com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.getDefaultInstance();
+      private PlayerMsgPro.PlayerMsg player_ = PlayerMsgPro.PlayerMsg.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          com.cheng.message.prototest.PlayerMsgPro.PlayerMsg, com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.Builder, com.cheng.message.prototest.PlayerMsgPro.PlayerMsgOrBuilder> playerBuilder_;
+          PlayerMsgPro.PlayerMsg, PlayerMsgPro.PlayerMsg.Builder, PlayerMsgPro.PlayerMsgOrBuilder> playerBuilder_;
       public boolean hasPlayer() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public com.cheng.message.prototest.PlayerMsgPro.PlayerMsg getPlayer() {
+      public PlayerMsgPro.PlayerMsg getPlayer() {
         if (playerBuilder_ == null) {
           return player_;
         } else {
           return playerBuilder_.getMessage();
         }
       }
-      public Builder setPlayer(com.cheng.message.prototest.PlayerMsgPro.PlayerMsg value) {
+      public Builder setPlayer(PlayerMsgPro.PlayerMsg value) {
         if (playerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -412,7 +412,7 @@ public final class LoginRespPro {
         return this;
       }
       public Builder setPlayer(
-          com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.Builder builderForValue) {
+          PlayerMsgPro.PlayerMsg.Builder builderForValue) {
         if (playerBuilder_ == null) {
           player_ = builderForValue.build();
           onChanged();
@@ -422,12 +422,12 @@ public final class LoginRespPro {
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder mergePlayer(com.cheng.message.prototest.PlayerMsgPro.PlayerMsg value) {
+      public Builder mergePlayer(PlayerMsgPro.PlayerMsg value) {
         if (playerBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              player_ != com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.getDefaultInstance()) {
+              player_ != PlayerMsgPro.PlayerMsg.getDefaultInstance()) {
             player_ =
-              com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.newBuilder(player_).mergeFrom(value).buildPartial();
+              PlayerMsgPro.PlayerMsg.newBuilder(player_).mergeFrom(value).buildPartial();
           } else {
             player_ = value;
           }
@@ -440,7 +440,7 @@ public final class LoginRespPro {
       }
       public Builder clearPlayer() {
         if (playerBuilder_ == null) {
-          player_ = com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.getDefaultInstance();
+          player_ = PlayerMsgPro.PlayerMsg.getDefaultInstance();
           onChanged();
         } else {
           playerBuilder_.clear();
@@ -448,12 +448,12 @@ public final class LoginRespPro {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      public com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.Builder getPlayerBuilder() {
+      public PlayerMsgPro.PlayerMsg.Builder getPlayerBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getPlayerFieldBuilder().getBuilder();
       }
-      public com.cheng.message.prototest.PlayerMsgPro.PlayerMsgOrBuilder getPlayerOrBuilder() {
+      public PlayerMsgPro.PlayerMsgOrBuilder getPlayerOrBuilder() {
         if (playerBuilder_ != null) {
           return playerBuilder_.getMessageOrBuilder();
         } else {
@@ -461,11 +461,11 @@ public final class LoginRespPro {
         }
       }
       private com.google.protobuf.SingleFieldBuilder<
-          com.cheng.message.prototest.PlayerMsgPro.PlayerMsg, com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.Builder, com.cheng.message.prototest.PlayerMsgPro.PlayerMsgOrBuilder> 
+          PlayerMsgPro.PlayerMsg, PlayerMsgPro.PlayerMsg.Builder, PlayerMsgPro.PlayerMsgOrBuilder>
           getPlayerFieldBuilder() {
         if (playerBuilder_ == null) {
           playerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.cheng.message.prototest.PlayerMsgPro.PlayerMsg, com.cheng.message.prototest.PlayerMsgPro.PlayerMsg.Builder, com.cheng.message.prototest.PlayerMsgPro.PlayerMsgOrBuilder>(
+              PlayerMsgPro.PlayerMsg, PlayerMsgPro.PlayerMsg.Builder, PlayerMsgPro.PlayerMsgOrBuilder>(
                   player_,
                   getParentForChildren(),
                   isClean());
@@ -475,20 +475,20 @@ public final class LoginRespPro {
       }
       
       // optional .proto.StatusCode status = 2;
-      private com.cheng.message.prototest.LoginRespPro.StatusCode status_ = com.cheng.message.prototest.LoginRespPro.StatusCode.getDefaultInstance();
+      private LoginRespPro.StatusCode status_ = LoginRespPro.StatusCode.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          com.cheng.message.prototest.LoginRespPro.StatusCode, com.cheng.message.prototest.LoginRespPro.StatusCode.Builder, com.cheng.message.prototest.LoginRespPro.StatusCodeOrBuilder> statusBuilder_;
+          LoginRespPro.StatusCode, LoginRespPro.StatusCode.Builder, LoginRespPro.StatusCodeOrBuilder> statusBuilder_;
       public boolean hasStatus() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public com.cheng.message.prototest.LoginRespPro.StatusCode getStatus() {
+      public LoginRespPro.StatusCode getStatus() {
         if (statusBuilder_ == null) {
           return status_;
         } else {
           return statusBuilder_.getMessage();
         }
       }
-      public Builder setStatus(com.cheng.message.prototest.LoginRespPro.StatusCode value) {
+      public Builder setStatus(LoginRespPro.StatusCode value) {
         if (statusBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -502,7 +502,7 @@ public final class LoginRespPro {
         return this;
       }
       public Builder setStatus(
-          com.cheng.message.prototest.LoginRespPro.StatusCode.Builder builderForValue) {
+          LoginRespPro.StatusCode.Builder builderForValue) {
         if (statusBuilder_ == null) {
           status_ = builderForValue.build();
           onChanged();
@@ -512,12 +512,12 @@ public final class LoginRespPro {
         bitField0_ |= 0x00000002;
         return this;
       }
-      public Builder mergeStatus(com.cheng.message.prototest.LoginRespPro.StatusCode value) {
+      public Builder mergeStatus(LoginRespPro.StatusCode value) {
         if (statusBuilder_ == null) {
           if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              status_ != com.cheng.message.prototest.LoginRespPro.StatusCode.getDefaultInstance()) {
+              status_ != LoginRespPro.StatusCode.getDefaultInstance()) {
             status_ =
-              com.cheng.message.prototest.LoginRespPro.StatusCode.newBuilder(status_).mergeFrom(value).buildPartial();
+              LoginRespPro.StatusCode.newBuilder(status_).mergeFrom(value).buildPartial();
           } else {
             status_ = value;
           }
@@ -530,7 +530,7 @@ public final class LoginRespPro {
       }
       public Builder clearStatus() {
         if (statusBuilder_ == null) {
-          status_ = com.cheng.message.prototest.LoginRespPro.StatusCode.getDefaultInstance();
+          status_ = LoginRespPro.StatusCode.getDefaultInstance();
           onChanged();
         } else {
           statusBuilder_.clear();
@@ -538,12 +538,12 @@ public final class LoginRespPro {
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
-      public com.cheng.message.prototest.LoginRespPro.StatusCode.Builder getStatusBuilder() {
+      public LoginRespPro.StatusCode.Builder getStatusBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getStatusFieldBuilder().getBuilder();
       }
-      public com.cheng.message.prototest.LoginRespPro.StatusCodeOrBuilder getStatusOrBuilder() {
+      public LoginRespPro.StatusCodeOrBuilder getStatusOrBuilder() {
         if (statusBuilder_ != null) {
           return statusBuilder_.getMessageOrBuilder();
         } else {
@@ -551,11 +551,11 @@ public final class LoginRespPro {
         }
       }
       private com.google.protobuf.SingleFieldBuilder<
-          com.cheng.message.prototest.LoginRespPro.StatusCode, com.cheng.message.prototest.LoginRespPro.StatusCode.Builder, com.cheng.message.prototest.LoginRespPro.StatusCodeOrBuilder> 
+          LoginRespPro.StatusCode, LoginRespPro.StatusCode.Builder, LoginRespPro.StatusCodeOrBuilder>
           getStatusFieldBuilder() {
         if (statusBuilder_ == null) {
           statusBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.cheng.message.prototest.LoginRespPro.StatusCode, com.cheng.message.prototest.LoginRespPro.StatusCode.Builder, com.cheng.message.prototest.LoginRespPro.StatusCodeOrBuilder>(
+              LoginRespPro.StatusCode, LoginRespPro.StatusCode.Builder, LoginRespPro.StatusCodeOrBuilder>(
                   status_,
                   getParentForChildren(),
                   isClean());
@@ -606,12 +606,12 @@ public final class LoginRespPro {
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.cheng.message.prototest.LoginRespPro.internal_static_proto_StatusCode_descriptor;
+      return LoginRespPro.internal_static_proto_StatusCode_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.cheng.message.prototest.LoginRespPro.internal_static_proto_StatusCode_fieldAccessorTable;
+      return LoginRespPro.internal_static_proto_StatusCode_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -708,41 +708,41 @@ public final class LoginRespPro {
       return super.writeReplace();
     }
     
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseFrom(
+    public static LoginRespPro.StatusCode parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseFrom(
+    public static LoginRespPro.StatusCode parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseFrom(byte[] data)
+    public static LoginRespPro.StatusCode parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseFrom(
+    public static LoginRespPro.StatusCode parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseFrom(java.io.InputStream input)
+    public static LoginRespPro.StatusCode parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseFrom(
+    public static LoginRespPro.StatusCode parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseDelimitedFrom(java.io.InputStream input)
+    public static LoginRespPro.StatusCode parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -751,7 +751,7 @@ public final class LoginRespPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseDelimitedFrom(
+    public static LoginRespPro.StatusCode parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -762,12 +762,12 @@ public final class LoginRespPro {
         return null;
       }
     }
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseFrom(
+    public static LoginRespPro.StatusCode parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.cheng.message.prototest.LoginRespPro.StatusCode parseFrom(
+    public static LoginRespPro.StatusCode parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -777,7 +777,7 @@ public final class LoginRespPro {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.cheng.message.prototest.LoginRespPro.StatusCode prototype) {
+    public static Builder newBuilder(LoginRespPro.StatusCode prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -790,18 +790,18 @@ public final class LoginRespPro {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.cheng.message.prototest.LoginRespPro.StatusCodeOrBuilder {
+       implements LoginRespPro.StatusCodeOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.cheng.message.prototest.LoginRespPro.internal_static_proto_StatusCode_descriptor;
+        return LoginRespPro.internal_static_proto_StatusCode_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.cheng.message.prototest.LoginRespPro.internal_static_proto_StatusCode_fieldAccessorTable;
+        return LoginRespPro.internal_static_proto_StatusCode_fieldAccessorTable;
       }
       
-      // Construct using com.cheng.message.prototest.LoginRespPro.StatusCode.newBuilder()
+      // Construct using LoginRespPro.StatusCode.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -833,24 +833,24 @@ public final class LoginRespPro {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.cheng.message.prototest.LoginRespPro.StatusCode.getDescriptor();
+        return LoginRespPro.StatusCode.getDescriptor();
       }
       
-      public com.cheng.message.prototest.LoginRespPro.StatusCode getDefaultInstanceForType() {
-        return com.cheng.message.prototest.LoginRespPro.StatusCode.getDefaultInstance();
+      public LoginRespPro.StatusCode getDefaultInstanceForType() {
+        return LoginRespPro.StatusCode.getDefaultInstance();
       }
       
-      public com.cheng.message.prototest.LoginRespPro.StatusCode build() {
-        com.cheng.message.prototest.LoginRespPro.StatusCode result = buildPartial();
+      public LoginRespPro.StatusCode build() {
+        LoginRespPro.StatusCode result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private com.cheng.message.prototest.LoginRespPro.StatusCode buildParsed()
+      private LoginRespPro.StatusCode buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        com.cheng.message.prototest.LoginRespPro.StatusCode result = buildPartial();
+        LoginRespPro.StatusCode result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -858,8 +858,8 @@ public final class LoginRespPro {
         return result;
       }
       
-      public com.cheng.message.prototest.LoginRespPro.StatusCode buildPartial() {
-        com.cheng.message.prototest.LoginRespPro.StatusCode result = new com.cheng.message.prototest.LoginRespPro.StatusCode(this);
+      public LoginRespPro.StatusCode buildPartial() {
+        LoginRespPro.StatusCode result = new LoginRespPro.StatusCode(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -876,16 +876,16 @@ public final class LoginRespPro {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.cheng.message.prototest.LoginRespPro.StatusCode) {
-          return mergeFrom((com.cheng.message.prototest.LoginRespPro.StatusCode)other);
+        if (other instanceof LoginRespPro.StatusCode) {
+          return mergeFrom((LoginRespPro.StatusCode)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(com.cheng.message.prototest.LoginRespPro.StatusCode other) {
-        if (other == com.cheng.message.prototest.LoginRespPro.StatusCode.getDefaultInstance()) return this;
+      public Builder mergeFrom(LoginRespPro.StatusCode other) {
+        if (other == LoginRespPro.StatusCode.getDefaultInstance()) return this;
         if (other.hasStatus()) {
           setStatus(other.getStatus());
         }
@@ -1044,23 +1044,23 @@ public final class LoginRespPro {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_proto_LoginResp_descriptor,
               new java.lang.String[] { "Player", "Status", },
-              com.cheng.message.prototest.LoginRespPro.LoginResp.class,
-              com.cheng.message.prototest.LoginRespPro.LoginResp.Builder.class);
+              LoginRespPro.LoginResp.class,
+              LoginRespPro.LoginResp.Builder.class);
           internal_static_proto_StatusCode_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_proto_StatusCode_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_proto_StatusCode_descriptor,
               new java.lang.String[] { "Status", "Tip", },
-              com.cheng.message.prototest.LoginRespPro.StatusCode.class,
-              com.cheng.message.prototest.LoginRespPro.StatusCode.Builder.class);
+              LoginRespPro.StatusCode.class,
+              LoginRespPro.StatusCode.Builder.class);
           return null;
         }
       };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.cheng.message.prototest.PlayerMsgPro.getDescriptor(),
+          PlayerMsgPro.getDescriptor(),
         }, assigner);
   }
   
