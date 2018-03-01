@@ -52,7 +52,7 @@ protobuf-net\ProtoGen\protogen -i:Cmd.proto -o:Cmd.cs
 |java_outer_classname|java文件的类名。**千万不能与message名称一样**|
 
 例：(`参数后面的值依次增加`)
-```$xslt
+```proto
     package proto;
     
     option java_package = "com.cheng.message.prototest";

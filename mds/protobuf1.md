@@ -34,7 +34,7 @@
     即root下一级同目录。批量导入目标根目录放在progen外层。**
     
 ### [BatProtobuf]参数说明
-```
+```python
 import os
 
 # 相关参数

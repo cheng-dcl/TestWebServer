@@ -8,7 +8,7 @@
 ### 配置文件：
 * xml文件
 * java特性文件（键=值）.properties
-```
+```properties
 log4j.rootLogger=DEBUG,stdout
 log4j.logger.SYS=DEBUG,SYS
 log4j.logger.OTHER=WARN,OTHER
@@ -75,11 +75,11 @@ log4j.appender.OTHER.layout.ConversionPattern=[%t][%d][%p][---][%F:%L]%m%n
 ### 使用流程：
 1. 配置文件log4j.properties,如上
 2. 获取日志器  
-```
+```java
    public static final Logger logger = Logger.getLogger(String appenderName);
 ```
 3. 读取配置     
-```
+```java
    BasicConfigurator.configure ()： 自动快速地使用缺省Log4j环境。 
    PropertyConfigurator.configure ( String configFilename) ：读取使用Java的特性文件编写的配置文件。 
    DOMConfigurator.configure ( String filename ) ：读取XML形式的配置文件。
