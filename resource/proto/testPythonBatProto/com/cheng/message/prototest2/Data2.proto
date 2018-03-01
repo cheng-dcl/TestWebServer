@@ -1,0 +1,13 @@
+package proto;
+
+option java_package = "com.cheng.message.prototest2";
+option java_outer_classname = "Data2Pro";
+
+import "com/cheng/message/prototest/Data.proto";
+
+message Data2{
+    optional int32 status = 1;
+    optional int32 cmd = 2;
+    optional string name = 3;
+    optional Data data = 4;
+}

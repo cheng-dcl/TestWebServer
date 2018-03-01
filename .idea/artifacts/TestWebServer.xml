@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TestWebServer">
+    <output-path>$PROJECT_DIR$/out/artifacts/TestWebServer</output-path>
+    <root id="archive" name="TestWebServer.war">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="TestWebServer" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="TestWebServer/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+syntax="proto3";
+
+package proto;
+
+option java_package = "com.cheng.message.prototest3";
+option java_outer_classname = "PlayerMsg3Pro";
+
+message PlayerMsg3{
+
+    int32 id = 1;
+    string name = 2;
+    string age = 3;
+    int32 level = 4;
+}
