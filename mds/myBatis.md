@@ -42,10 +42,10 @@ MyBatis 是支持普通 SQL 查询，存储过程和高级映射的优秀持久�
  ![mybatis四个文件]
 >* XXXModel.java: 与表格对应的对象类。如UserModel.java , 用户对象。
 >* XXXMapper.java: 与对象类对应的“Dao层”实现接口,主要是一些Sql方法接口。 如UserMapper.java
->* XXXMapper.xml:映射上面的Mapper类。主要是将接口方法里的sql语句对应控制在配置中。这正是mybatis的一大特点。如UserMapper.xml
-               ps：sql在配置中这个特性，也导致了一个缺点。就是相较于传统jdbc，sql语句在代码中。不便于调试SQL了。
-                  但是使用log4j可以记录到sql语句的状态。当然仅仅是log。
->* mybatis.xml：mybatis配置。两大功能，1，设置数据库的连接相关。 2，映射上面Mapper.xml（多个）配置。  
+>* XXXMapper.xml:映射上面的Mapper类。主要是将接口方法里的sql语句对应控制在配置中。这正是mybatis的一大特点。如UserMapper.xml。
+               **PS：sql在配置中这个特性，也导致了一个缺点。就是相较于传统jdbc，sql语句在代码中。不便于调试SQL了。
+                  但是使用log4j可以记录到sql语句的状态。当然仅仅是log。**
+>* mybatis.xml：mybatis配置。两大功能，1，设置数据库的连接相关。 2，映射上面Mapper.xml配置。  
 ```xml
 <environments default="cybatis">
     <environment id="cybatis">
@@ -71,7 +71,7 @@ MyBatis 是支持普通 SQL 查询，存储过程和高级映射的优秀持久�
     <mapper resource="com/cheng/mybatis/test/TestMapper.xml"/>
 </mappers>
 ```
-不难看出上面一块是设置数据库连接，下面mappers映射Mapper.xml。
+上面一块是设置数据库连接，下面mappers映射Mapper.xml。
    
  
  **2.mybatis流程**  
@@ -88,8 +88,8 @@ MyBatis 是支持普通 SQL 查询，存储过程和高级映射的优秀持久�
  有四种方法，这里只记录下最简单的方法。
  
  ## MyBatis Generator用法
-1，先从官网上引入`mybatis和mybatis generator的jar包`。导入到工程中。[MyBatis]和[MyBatis Generator]获取。  
-2，需要一个指定一个文件`generator.xml`文件。用来设置数据库表格对应的对象输出。 `请注意上面的是mybatis配置，这个是generator的。确保区分`(毕竟有在这里蒙圈了好一会。)  
+1，先从官网上引入`mybatis`和`mybatis generator`的jar包。导入到工程中。[MyBatis]和[MyBatis Generator]获取。  
+2，需要一个文件`generator.xml`文件。用来设置数据库表格对应的对象输出。 `请注意上面的是mybatis配置，这个是generator的`。确保区分(毕竟有在这里蒙圈了好一会)  。
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
@@ -148,7 +148,9 @@ ce\MyIntelli\TestWebServer\resource\mybatis\generator_config.xml
 
 ### 源代码
 
-1. [MyBatis测试](https://github.com/dcl-Cheng/TestWebServer/tree/master/src/com/cheng/mybatis/test):  
-修改TestMain中的数据库连接参数,创建对应的表，或者自行建表修改配置映射  ，运行TestMain   
+1.[MyBatis测试](https://github.com/dcl-Cheng/TestWebServer/tree/master/src/com/cheng/mybatis/test):  
+修改TestMain中的数据库连接参数,创建对应的表，或者自行建表修改配置映射。  
+运行TestMain     
 2.[使用Mybatis Generator后的测试](https://github.com/dcl-Cheng/TestWebServer/tree/master/src/com/cheng/mybatis/testByGenerator):
-修改DbTool中的数据库连接参数,创建对应的表，或者自行建表修改配置映射 ,运行UserService  
+修改DbTool中的数据库连接参数,创建对应的表，或者自行建表修改配置映射。  
+运行UserService  
