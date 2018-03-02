@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namepace 指代的对应Mapper的路径 -->
+<mapper namespace="com.cheng.mybatis.test.TestMapper">
+    <!-- 自定义返回结果集 id：自定义  type：文件路径 -->
+    <resultMap id="TestModel" type="com.cheng.mybatis.test.TestModel">
+        <id property="id" column="id" javaType="java.lang.Integer"></id>
+        <result property="name" column="name" javaType="java.lang.String"></result>
+    </resultMap>
+    <!-- 在各种标签中的id属性必须和接口中的方法名相同 ， id属性值必须是唯一的，不能够重复使用。parameterType属性指明查询时使用的参数类型，
+    resultType属性指明查询返回的结果集类型-->
+    <!-- useGeneratedKeys：（ 仅 对 insert 有 用 ） 这 会 告 诉 MyBatis 使 用 JDBC 的getGeneratedKeys
+         方法来取出由数据（比如：像 MySQL 和 SQLServer 这样的数据库管理系统的自动递增字段）内部生成的主键。默认值： false。
+         oracle 不支持应该设置成 useGeneratedKeys="false" 不然会报错
+    -->
+    <!--keyProperty： （仅对 insert有用）标记一个属性， MyBatis 会通过 getGeneratedKeys或者通过 insert 语句的 selectKey 子元素设置它的值。默认：不设置。 -->
+    <!--#{}中的内容，为占位符，当参数为某个JavaBean时，表示放置该Bean对象的属性值  -->
+
+
+    <insert id="addTest" useGeneratedKeys="true" keyProperty="id">
+        insert into config_test (id,name) values (#{id},#{name})
+    </insert>
+
+    <update id="updateTest" >
+        update config_test set name=#{name} where id=#{id}
+    </update>
+
+    <delete id="deleteTest" parameterType="int">
+        delete from config_test where id=#{id}
+    </delete>
+
+    <select id="selectTest" parameterType="int" resultMap="TestModel">
+        select * from config_test where id=#{id}
+    </select>
+
+    <select id="selectByTestName" resultMap="TestModel">
+        select * from config_test where name=#{name}
+    </select>
+
+    <select id="selectTests" resultMap="TestModel">
+        select * from config_test
+    </select>
+</mapper>

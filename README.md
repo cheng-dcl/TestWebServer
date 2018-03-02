@@ -28,5 +28,8 @@
 > [基于protobuf java 2.4.1 和 3.5.1版本的测试](mds/protobuf.md)   
 > [批量导入工具问题和细节](mds/protobuf1.md) 
 
+### 5. Mybatis 和 Mybatis Generator测试提交
+> [Mybatis 和 Mybatis Generator](mds/myBatis.md)
+
 
 

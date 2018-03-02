@@ -14,6 +14,8 @@ public class TestLog4j {
 
     public static void main(String[] args){
 
+
+
         PropertyConfigurator.configure("resource/log4j.properties");
         Parent parent = new Parent();
         Son son = new Son();

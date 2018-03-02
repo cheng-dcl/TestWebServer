@@ -2,7 +2,7 @@ package com.cheng.protobuf;
 
 
 import com.cheng.message.prototest.PlayerMsgPro;
-import com.cheng.message.prototest3.PlayerMsg3Pro;
+//import com.cheng.message.prototest3.PlayerMsg3Pro;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 /**
