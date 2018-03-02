@@ -38,14 +38,41 @@ MyBatis 是支持普通 SQL 查询，存储过程和高级映射的优秀持久�
  
  ## MyBatis的用法 详见[MyBatis官网中文翻译]
  **1.先认识用到的基本四个文件：**   
+ **如图：**
+ ![mybatis四个文件]
 >* XXXModel.java: 与表格对应的对象类。如UserModel.java , 用户对象。
 >* XXXMapper.java: 与对象类对应的“Dao层”实现接口,主要是一些Sql方法接口。 如UserMapper.java
 >* XXXMapper.xml:映射上面的Mapper类。主要是将接口方法里的sql语句对应控制在配置中。这正是mybatis的一大特点。如UserMapper.xml
                ps：sql在配置中这个特性，也导致了一个缺点。就是相较于传统jdbc，sql语句在代码中。不便于调试SQL了。
                   但是使用log4j可以记录到sql语句的状态。当然仅仅是log。
 >* mybatis.xml：mybatis配置。两大功能，1，设置数据库的连接相关。 2，映射上面Mapper.xml（多个）配置。  
-**如图：**
-   ![mybatis四个文件]
+```xml
+<environments default="cybatis">
+    <environment id="cybatis">
+        <!-- type="JDBC" 代表使用JDBC的提交和回滚来管理事务 -->
+        <transactionManager type="JDBC" />
+
+        <!-- mybatis提供了3种数据源类型，分别是：POOLED,UNPOOLED,JNDI -->
+        <!-- POOLED 表示支持JDBC数据源连接池 -->
+        <!-- UNPOOLED 表示不支持数据源连接池 -->
+        <!-- JNDI 表示支持外部数据源连接池 -->
+        <dataSource type="POOLED">
+            <property name="driver" value="${jdbc.driver}" />
+            <property name="url" value="${jdbc.url}" />
+            <property name="username" value="${jdbc.username}" />
+            <property name="password" value="${jdbc.password}" />
+        </dataSource>
+    </environment>
+</environments>
+
+
+<mappers>
+    <!-- 配置mapper，有更多继续添加 -->
+    <mapper resource="com/cheng/mybatis/test/TestMapper.xml"/>
+</mappers>
+```
+不难看出上面一块是设置数据库连接，下面mappers映射Mapper.xml。
+   
  
  **2.mybatis流程**  
 >* 根据数据库表，依据上面的文件顺序依次创立对应的数据对象model，接口mapper，接口映射mapper.xml。
