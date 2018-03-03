@@ -75,7 +75,7 @@ def listFiles(filePath):
         if len(filterPackge) > 0:
             for p in filterPackge:
                 if p in newPath:
-                    notProto = notProto.replace("proto", "")
+                    notProto = notProto.replace(p, "")
 
         if os.path.isfile(newPath):
             if os.path.splitext(newPath)[1] == text_suffix:
@@ -105,14 +105,14 @@ def compile(type):
 
 # 编译具体
 def exec(type, source):
-    newSource = source[len(source_dir_path) + 1:]
+    newSource = splitDir(source_dir_path,source);
     fronSource = os.path.split(newSource)[0]
     if type == JavaKey:
         # java 指定最终java包目录 ，prop文件包目录，prop文件目录
 
         compileStr = Java.get("compile_path") + \
                      " --java_out=" + Java.get("target_path") + " " \
-                                                                " --proto_path=" + source_dir_path + " " + source
+                     " --proto_path=" + source_dir_path + " " + source
         print("JAVA : " + compileStr)
         os.system(compileStr)
     elif type == CSKey:

@@ -1,148 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="test@localhost">
+<dataSource name="@localhost">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
     <root id="1"/>
-    <schema id="2" parent="1" name="test">
+    <schema id="2" parent="1" name="information_schema">
       <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="jsprun"/>
+    <schema id="4" parent="1" name="minichat"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="test">
       <Visible>1</Visible>
     </schema>
-    <schema id="3" parent="1" name="information_schema"/>
-    <schema id="4" parent="1" name="jsprun"/>
-    <schema id="5" parent="1" name="minichat"/>
-    <schema id="6" parent="1" name="mysql"/>
     <schema id="7" parent="1" name="xx_account"/>
     <schema id="8" parent="1" name="xx_config"/>
-    <table id="9" parent="2" name="config_age"/>
-    <table id="10" parent="2" name="config_test"/>
-    <table id="11" parent="2" name="config_user"/>
-    <table id="12" parent="2" name="player_infinite"/>
-    <table id="13" parent="2" name="player_treasure_record"/>
-    <column id="14" parent="9" name="id">
+    <schema id="9" parent="1" name="mysqldb">
+      <Visible>1</Visible>
+    </schema>
+    <table id="10" parent="6" name="config_age"/>
+    <table id="11" parent="6" name="config_test"/>
+    <table id="12" parent="6" name="config_user"/>
+    <table id="13" parent="6" name="player_infinite"/>
+    <table id="14" parent="6" name="player_treasure_record"/>
+    <column id="15" parent="10" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="15" parent="9" name="age">
+    <column id="16" parent="10" name="age">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="16" parent="10" name="id">
+    <column id="17" parent="11" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="17" parent="10" name="name">
-      <Position>2</Position>
-      <DataType>varchar(255)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="18" parent="11" name="id">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>&apos;0&apos;</DefaultExpression>
-    </column>
-    <column id="19" parent="11" name="name">
+    <column id="18" parent="11" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="20" parent="12" name="player_id">
+    <column id="19" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="20" parent="12" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="21" parent="13" name="player_id">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="21" parent="12" name="max_level">
+    <column id="22" parent="13" name="max_level">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="22" parent="12" name="fight_num">
+    <column id="23" parent="13" name="fight_num">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="23" parent="12" name="all_fight_num">
+    <column id="24" parent="13" name="all_fight_num">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="24" parent="12" name="update_time">
+    <column id="25" parent="13" name="update_time">
       <Position>5</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="25" parent="12" name="last_update_time">
+    <column id="26" parent="13" name="last_update_time">
       <Position>6</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="26" parent="12" name="star_record">
+    <column id="27" parent="13" name="star_record">
       <Position>7</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="27" parent="12" name="positon_record">
+    <column id="28" parent="13" name="positon_record">
       <Position>8</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="28" parent="13" name="playerid">
+    <column id="29" parent="14" name="playerid">
       <Position>1</Position>
       <Comment>玩家id</Comment>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="29" parent="13" name="special_item_addition_rate">
+    <column id="30" parent="14" name="special_item_addition_rate">
       <Position>2</Position>
       <Comment>获得特殊道具的概率加成</Comment>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="30" parent="13" name="points_now">
+    <column id="31" parent="14" name="points_now">
       <Position>3</Position>
       <Comment>用户当前移动到的点id 0为未开始</Comment>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="31" parent="13" name="pass_points">
+    <column id="32" parent="14" name="pass_points">
       <Position>4</Position>
       <Comment>已通过路径点</Comment>
       <DataType>varchar(150)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
     </column>
-    <column id="32" parent="13" name="available_times">
+    <column id="33" parent="14" name="available_times">
       <Position>5</Position>
       <Comment>可用次数</Comment>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="33" parent="13" name="special_item_list">
+    <column id="34" parent="14" name="special_item_list">
       <Position>6</Position>
       <Comment>可获得的特殊道具列表 类型_id_数量_是否获得|</Comment>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
     </column>
-    <column id="34" parent="13" name="reset_times">
+    <column id="35" parent="14" name="reset_times">
       <Position>7</Position>
       <Comment>重置次数</Comment>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="35" parent="13" name="update_time">
+    <column id="36" parent="14" name="update_time">
       <Position>8</Position>
       <Comment>更新时间</Comment>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="36" parent="13" name="buy_available_times">
+    <column id="37" parent="14" name="buy_available_times">
       <Position>9</Position>
       <Comment>行动点数购买次数 用以计算购买费用</Comment>
       <DataType>int(11)|0</DataType>

@@ -31,5 +31,7 @@
 ### 5. Mybatis 和 Mybatis Generator测试提交
 > [Mybatis 和 Mybatis Generator](mds/myBatis.md)
 
+### 6. MySql测试提交
+> [MySql](mds/mysql.md)
 
 
