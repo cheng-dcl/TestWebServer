@@ -34,4 +34,6 @@
 ### 6. MySql测试提交
 > [MySql](mds/mysql.md)
 
+### 7. Redis & Jedis测试提交
+> [Redis & Jedis](mds/redis.md)
 

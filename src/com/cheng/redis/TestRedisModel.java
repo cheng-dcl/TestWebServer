@@ -1,20 +1,16 @@
-package com.cheng.mybatis.test;
+package com.cheng.redis;
 
 import java.io.Serializable;
 
 /**
- * *  test表对象
+ * *
  * *  @author: dcl-Cheng
  * *  @github.io: https://dcl-cheng.github.io/
  **/
-public class TestModel implements Serializable {
+public class TestRedisModel implements Serializable {
 
     private int id;
     private String name;
-
-    public TestModel() {
-
-    }
 
     public int getId() {
         return id;
@@ -28,13 +24,13 @@ public class TestModel implements Serializable {
         return name;
     }
 
-    public void setName(String value) {
-        this.name = value;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return "TestModel{" +
+        return "TestRedisModel{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

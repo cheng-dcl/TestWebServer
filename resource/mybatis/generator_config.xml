@@ -12,6 +12,7 @@
         <javaModelGenerator targetPackage="com.cheng.mybatis.test.model" targetProject="../../../Tmp" />
         <sqlMapGenerator targetPackage="com.cheng.mybatis.test.maps" targetProject="../../../Tmp" />
         <javaClientGenerator targetPackage="com.cheng.mybatis.test.mappers" targetProject="../../../Tmp" type="XMLMAPPER" />
+
         <table schema="test" tableName="config_user" domainObjectName="ConfigUser"/>
         <table schema="test" tableName="config_age" domainObjectName="ConfigAge">
            <property name="rootClass" value="com.cheng.mybatis.test.model.BaseModel" />
