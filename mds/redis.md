@@ -9,13 +9,13 @@
  
  
 ### redis安装&使用
-1。[下载redis](https://github.com/MSOpenTech/redis/releases)
-2。cd到安装目录。或者配下环境变量。 使用cmd窗口，执行： `redis-server.exe redis.windows.conf` 开启服务器。
-3。开启另一cmd窗口（客户终端）cd到目录。执行：`redis-cli`
+1。[下载redis](https://github.com/MSOpenTech/redis/releases)  
+2。cd到安装目录。或者配下环境变量。 使用cmd窗口，执行： `redis-server.exe redis.windows.conf` 开启服务器。  
+3。开启另一cmd窗口（客户终端）cd到目录。执行：`redis-cli` 开启一个连接。   
 4。具体使用和教程细节内容，移步[Redis教程](http://www.runoob.com/redis/redis-tutorial.html)
    
 ### jedis的使用
-类库：需要用来连接redis的jar包jedis。[下载jedis jar包](http://central.maven.org/maven2/redis/clients/jedis/2.9.0/jedis-2.9.0.jar)  
+**类库：需要用来连接redis的jar包jedis。**[下载jedis jar包](http://central.maven.org/maven2/redis/clients/jedis/2.9.0/jedis-2.9.0.jar)  
 **1.连接redis：只需传入`ip，端口`即可获取一个jedis连接。**
 ```java
   Jedis jedis = new Jedis("localhost", 6379);
@@ -66,7 +66,7 @@
 ```   
 
 ### 源代码：
-* 目录：[src/com/cheng/redis]:(https://github.com/dcl-Cheng/TestWebServer/tree/master/src/com/cheng/redis)
+* 目录：[src/com/cheng/redis](https://github.com/dcl-Cheng/TestWebServer/tree/master/src/com/cheng/redis)
 * 测试：启动RedisMain
 
 [website]:http://blog.csdn.net/Leonardo9029/article/details/42550423
